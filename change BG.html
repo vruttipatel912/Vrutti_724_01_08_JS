@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("body").click(function(){
+            $(this).css("background-color","blue")
+        })
+        
+        $(".d2").dblclick (function(){
+            
+            $(".d2").show(1000);
+            $(".d2").append("<div class='d2'></div>"+"&nbsp")
+        })
+ })
+</script>
+<style>
+    
+    .d1{
+        display: none;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        border: 3px solid black;
+    }
+    .d2{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(0, 255, 13);
+        border: 3px solid black;
+        margin-left: 130px;
+    }
+</style>
+</head>
+<body>
+    <p style="border: 3px solid black; width: 50%; padding-left: 5px; color: black; background-color: chartreuse;">Single Click Anywhere to change the Background Color</p>
+    <div class="main" style="height: 200px; width: 100px; position: absolute; float: left; ">
+    <div class="d1"></div>
+    <div class="d2"></div>
+</div>
+</body>
+</html>
